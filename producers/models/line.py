@@ -42,7 +42,7 @@ class Line:
             )
             prev_station.dir_b = new_station
             prev_station = new_station
-            line.append(new_station)
+            line.append(str(new_station).encode('utf8'))
         return line
 
     def _build_trains(self):
